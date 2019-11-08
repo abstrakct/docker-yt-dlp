@@ -1,4 +1,5 @@
-#!/bin/bash
+#!/bin/sh
+
 filename='channels.txt'
 echo Start
 while read p; do 
