@@ -5,6 +5,8 @@ forked from timlinden
 
 Optional environment variable 'DOWNLOAD_RATE' will set maximum download rate. See youtube-dl manpage for details.
 
+Optional environment variable 'DOWNLOAD_SUBS' - set to 'yes' (default value) to download and embed any subtitles. Set to 'no' to ignore subtitles.
+
 Example docker-compose entry:
 
 ```
