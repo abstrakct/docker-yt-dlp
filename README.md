@@ -1,5 +1,5 @@
 # youtube-dl
-Automatically backup YouTube Channels
+Docker container for automatically backing up channels on any site supported by youtube-dl.
 
 forked from timlinden
 
@@ -7,7 +7,7 @@ Optional environment variable 'DOWNLOAD_RATE' will set maximum download rate. Se
 
 Example docker-compose entry:
 
-`
+```
 youtube-dl:
   image: vortexsurfer/youtube-dl
   container_name: youtube-dl
@@ -16,6 +16,6 @@ youtube-dl:
   volumes:
     - /path/to/download/directory:/downloads
   restart: unless-stopped
-`
+```
 
 Videos will be downloaded to the /downloads directory. Put all the channels you want to automatically download in a file named channels.txt in the /downloads directory. See youtube-dl manpage for details.
