@@ -1,6 +1,7 @@
 FROM python:alpine
 
 RUN pip install youtube-dl
+RUN apk add --no-cache ffmpeg
 
 RUN mkdir /downloads
 
