@@ -1,5 +1,8 @@
 #!/bin/sh
 
+# Make sure youtube-dl is up to date
+pip install youtube-dl
+
 RATE="${DOWNLOAD_RATE:-2M}"
 SUBS="${DOWNLOAD_SUBS:-yes}"
 
