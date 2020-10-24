@@ -2,4 +2,6 @@
 
 BODY="$1"
 
-/usr/bin/apprise -b $BODY "$APPRISE_SERVICE"
+if [[ ! -z $APPRISE_SERVICE ]]; then
+    /usr/bin/apprise -b $BODY "$APPRISE_SERVICE"
+fi

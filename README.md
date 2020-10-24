@@ -7,6 +7,8 @@ Optional environment variable 'DOWNLOAD_RATE' will set maximum download rate. Se
 
 Optional environment variable 'DOWNLOAD_SUBS' - set to 'yes' (default value) to download and embed any subtitles. Set to 'no' to ignore subtitles.
 
+Optional environment variable 'APPRISE_SERVICE' -if set, the container will send notifications to chosen service via Apprise.
+
 Example docker-compose entry:
 
 ```
@@ -15,6 +17,7 @@ youtube-dl:
   container_name: youtube-dl
   environment:
     - DOWNLOAD_RATE=500K
+    - APPRISE_SERVICE=discord://webhook_id/webhook_token
   volumes:
     - /path/to/download/directory:/downloads
   restart: unless-stopped
