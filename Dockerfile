@@ -1,6 +1,6 @@
 FROM python:alpine
 
-RUN pip install --upgrade yt-dlp apprise
+RUN pip install youtube-dl apprise
 RUN apk add --no-cache ffmpeg bash
 
 RUN mkdir /downloads
