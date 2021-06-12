@@ -1,7 +1,14 @@
-# youtube-dl
-Docker container for automatically backing up channels on any site supported by youtube-dl.
+# Docker image for yt-dlp
 
-forked from timlinden
+This is a Docker image for automatically backing up channels/videos on any site supported by yt-dlp (a fork of youtube-dl)
+
+This image is probably not following all best practices for Docker images, but there shouldn't be anything wrong with it either.
+
+Future improvements include optimizing the size of the image. It's probably unneccesarily big right now.
+
+All dependencies are of course included, so this can be a nice way to try / run yt-dlp without having to install every dependency on your host.
+
+Originally forked from timlinden
 
 Optional environment variable 'DOWNLOAD_RATE' will set maximum download rate. See youtube-dl manpage for details.
 
